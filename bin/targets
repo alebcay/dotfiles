@@ -1,0 +1,2 @@
+#!/bin/bash
+make -rpn | gsed -n -e '/^$/ { n ; /^[^ ]*:/p }' | sort | egrep --color '^[^ ]*:' | sed 's/W$//' | tr -s : | perl ~/.env/include/targets/chomper.pl | perl ~/.env/include/targets/printer.pl | sort -nr | cut -d' ' -f 2- |  ~/.env/include/targets/treedumper.py
