@@ -19,9 +19,14 @@ source ~/.env/include/starship.zsh
 source ~/.env/include/style.zsh
 source ~/.env/include/zinit.zsh
 
-if [ -d "$HOME/.env/secure" ]
-then
-    source ~/.env/secure/brew.zsh
+if [ -d "$HOME/.env/secure" ]; then
+    if [ -f "$HOME/.env/secure/brew.zsh" ]; then
+        source ~/.env/secure/brew.zsh
+    fi
+
+    if [ -f "$HOME/.env/secure/work.zsh" ]; then
+        source ~/.env/secure/work.zsh
+    fi
 fi
 
 source ~/.env/include/compinit.zsh
