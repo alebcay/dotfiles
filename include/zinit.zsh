@@ -1,7 +1,7 @@
 if [ ! -d "$HOME/.env/include/zinit" ]
 then
-   mkdir -p "~/.env/include/zinit"
-   git clone https://github.com/zdharma-continuum/zinit.git ~/.env/include/zinit
+   mkdir -p "$HOME/.env/include/zinit"
+   git clone https://github.com/zdharma-continuum/zinit.git $HOME/.env/include/zinit
 fi
 
 source ~/.env/include/zinit/zinit.zsh
