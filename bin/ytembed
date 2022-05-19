@@ -1,0 +1,4 @@
+#!/bin/sh
+if [[ $# -eq 1 ]]; then
+  printf "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen src=\"https://www.youtube-nocookie.com/embed/$(ytid "$1")?modestbranding=1&amp;showinfo=0&amp;rel=0&amp;color=white&amp;wmode=opaque\" width=\"560\" frameborder=\"0\" height=\"315\" />\n"
+fi
