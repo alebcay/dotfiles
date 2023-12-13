@@ -1,5 +1,5 @@
-#!/usr/local/bin/perl
-eval 'exec /opt/local/bin/perl -S $0 ${1+"$@"}'
+#!/usr/bin/env perl
+eval 'exec perl -S $0 ${1+"$@"}'
     if $running_under_some_shell;
                         # this emulates #! processing on NIH machines.
                         # (remove #! line above if indigestible)

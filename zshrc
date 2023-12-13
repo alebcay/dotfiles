@@ -2,7 +2,7 @@ setopt correct
 
 export EDITOR="nano"
 export LANG=en_US.UTF-8
-export PATH="/Users/caleb/.env/bin:/Users/caleb/go/bin:/Users/caleb/.cargo/bin:/Users/caleb/.local/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:/usr/local/sbin:/usr/local/bin:/opt/local/bin:/opt/X11/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/usr/local/MacGPG2/bin:/usr/texbin:/Volumes/Storage/Caches/go/bin:/Volumes/Storage/Developer/depot_tools"
+export PATH="${HOME}/.env/bin:${HOME}/go/bin:${HOME}/.cargo/bin:${HOME}/.local/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:/opt/local/bin:/opt/X11/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/usr/local/MacGPG2/bin:/usr/texbin:/Volumes/Storage/Caches/go/bin:/Volumes/Storage/Developer/depot_tools"
 export KEYDIR="/Volumes/Storage/Developer/keystore"
 
 source ~/.env/include/aliases.zsh

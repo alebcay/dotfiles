@@ -1,1 +1,1 @@
-sudo chown -R "$USER":admin /usr/local
+sudo chown -R "$USER":admin $(brew --prefix)
