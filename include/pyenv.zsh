@@ -1,1 +1,1 @@
-[[ -d ${PYENV_ROOT:-$HOME/.pyenv}/bin ]] && eval "$(pyenv init -)"
+[[ -d ${PYENV_ROOT:-$HOME/.pyenv} ]] && eval "$(pyenv init -)"
