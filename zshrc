@@ -29,6 +29,7 @@ source ~/.env/include/gcloud.zsh
 source ~/.env/include/history.zsh
 source ~/.env/include/iterm2.zsh
 source ~/.env/include/keys.zsh
+source ~/.env/include/pyenv.zsh
 source ~/.env/include/nvm.zsh
 source ~/.env/include/starship.zsh
 source ~/.env/include/style.zsh
