@@ -9,5 +9,5 @@ alias line="lima nerdctl"
 if [ -e "/Applications/VSCodium.app/Contents/Resources/app/bin/codium" ]; then
     alias code="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
 elif [ -e "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" ]; then
-    alias code="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
+    alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 fi
