@@ -1,4 +1,13 @@
-#!/bin/sh
-if [[ $# -eq 1 ]]; then
-  python3 -c "import re; import sys; m = re.match('^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))?\?v?=?(?P<id>\w*).*', \"$1\"); sys.stdout.write(m.group('id'))"
-fi
+#!/usr/bin/env python3
+import re
+import sys
+from urllib.parse import urlparse, parse_qs
+
+def get_youtube_id(url: str) -> str | None:
+    parsed = urlparse(url)
+    if '/watch' in parsed.path:
+        return parse_qs(parsed.query).get('v', [None])[0]
+    m = re.search(r'/live/([^/?&#]+)', parsed.path)
+    return m.group(1) if m else None
+
+print(get_youtube_id(sys.argv[1]))
