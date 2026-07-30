@@ -20,8 +20,4 @@ alias bbfpr="brew bump-formula-pr --no-browse"
 alias bbcpr="brew bump-cask-pr --no-browse"
 alias line="lima nerdctl"
 
-alias_cascade code "/Applications/VSCodium.app/Contents/Resources/app/bin/codium" \
-                   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" \
-                   "${HOME}/AppImages/vscodium.appimage"
-
 unset -f alias_cascade

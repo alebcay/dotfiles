@@ -33,6 +33,7 @@ source ~/.env/include/pyenv.zsh
 source ~/.env/include/nvm.zsh
 source ~/.env/include/starship.zsh
 source ~/.env/include/style.zsh
+source ~/.env/include/vscode.zsh
 
 if [ -d "$HOME/.env/secure" ]; then
     if [ -f "$HOME/.env/secure/brew.zsh" ]; then
